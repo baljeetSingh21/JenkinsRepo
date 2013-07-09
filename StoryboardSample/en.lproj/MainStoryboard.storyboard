@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nuN-lI-Skr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Mine View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="mineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="tHt-hg-Jb6">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" id="Mof-Al-cVd">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="267" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="FvF-Ek-QOL" kind="push" identifier="mineSegue" id="eDC-XM-3L4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="4Wd-aP-Ens"/>
+                                    <outlet property="delegate" destination="2" id="5t1-Ui-xPg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tHt-hg-Jb6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="D7H-Jk-hHj"/>
+                            <constraint firstItem="tHt-hg-Jb6" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="GqV-S2-JdS"/>
+                            <constraint firstItem="tHt-hg-Jb6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="RqW-zY-n3S"/>
+                            <constraint firstItem="tHt-hg-Jb6" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="cae-T7-mmx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TZj-GT-ByH"/>
+                    <connections>
+                        <outlet property="tableView1" destination="tHt-hg-Jb6" id="sZb-m8-waI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="107"/>
+        </scene>
+        <!--Mine Detail View Controller-->
+        <scene sceneID="1Md-ZI-zBQ">
+            <objects>
+                <viewController id="FvF-Ek-QOL" customClass="mineDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kWx-0K-H6W">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfv-vr-0aH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="SDE-7K-72M"/>
+                                    <constraint firstAttribute="height" constant="89" id="vkh-8v-Hi9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tfv-vr-0aH" firstAttribute="top" secondItem="kWx-0K-H6W" secondAttribute="top" constant="132" id="ggh-Wn-7hd"/>
+                            <constraint firstItem="tfv-vr-0aH" firstAttribute="leading" secondItem="kWx-0K-H6W" secondAttribute="leading" constant="36" id="pdU-xB-Lrs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sgr-Wz-LzW"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="tfv-vr-0aH" id="hhl-X4-Fxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVd-dq-6T2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GOC-mM-UxN">
+            <objects>
+                <navigationController id="nuN-lI-Skr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TNd-wI-wfq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="g7t-1Y-UDf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POG-YD-PdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="116"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="mineDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mineDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="recipeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="mineViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mineViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView1" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
