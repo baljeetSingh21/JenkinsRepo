@@ -19,6 +19,8 @@
 		8416080E178AA7EE008092A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8416080C178AA7EE008092A8 /* MainStoryboard.storyboard */; };
 		84160811178AA7EE008092A8 /* mineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84160810178AA7EE008092A8 /* mineViewController.m */; };
 		84160819178AB324008092A8 /* mineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84160818178AB324008092A8 /* mineDetailViewController.m */; };
+		84F3D875178D1D560020A80E /* AboutmineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D874178D1D560020A80E /* AboutmineViewController.m */; };
+		84F3D879178D1F4C0020A80E /* banking.html in Resources */ = {isa = PBXBuildFile; fileRef = 84F3D878178D1F4C0020A80E /* banking.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		84160810178AA7EE008092A8 /* mineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mineViewController.m; sourceTree = "<group>"; };
 		84160817178AB324008092A8 /* mineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineDetailViewController.h; sourceTree = "<group>"; };
 		84160818178AB324008092A8 /* mineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineDetailViewController.m; sourceTree = "<group>"; };
+		84F3D873178D1D560020A80E /* AboutmineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutmineViewController.h; sourceTree = "<group>"; };
+		84F3D874178D1D560020A80E /* AboutmineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutmineViewController.m; sourceTree = "<group>"; };
+		84F3D878178D1F4C0020A80E /* banking.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = banking.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,9 @@
 		841607E8178AA7EE008092A8 = {
 			isa = PBXGroup;
 			children = (
+				84F3D878178D1F4C0020A80E /* banking.html */,
+				84F3D873178D1D560020A80E /* AboutmineViewController.h */,
+				84F3D874178D1D560020A80E /* AboutmineViewController.m */,
 				84160817178AB324008092A8 /* mineDetailViewController.h */,
 				84160818178AB324008092A8 /* mineDetailViewController.m */,
 				841607FA178AA7EE008092A8 /* StoryboardSample */,
@@ -169,6 +177,7 @@
 				84160809178AA7EE008092A8 /* Default@2x.png in Resources */,
 				8416080B178AA7EE008092A8 /* Default-568h@2x.png in Resources */,
 				8416080E178AA7EE008092A8 /* MainStoryboard.storyboard in Resources */,
+				84F3D879178D1F4C0020A80E /* banking.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +192,7 @@
 				84160805178AA7EE008092A8 /* mineAppDelegate.m in Sources */,
 				84160811178AA7EE008092A8 /* mineViewController.m in Sources */,
 				84160819178AB324008092A8 /* mineDetailViewController.m in Sources */,
+				84F3D875178D1D560020A80E /* AboutmineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +315,7 @@
 				84160816178AA7EE008092A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
